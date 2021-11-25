@@ -9,18 +9,25 @@ html {
 .icon {color: #BCD2DA;}
 
 .card {
-    /* display, flex-direction */
+    display: flex;
+    flex-direction: column;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
 }
 
 .card__description {
-    /* display, flex-direction, justify-content, align-items */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 15px 0;
 }
 
-.card__descriptionIcon {font-size: 32px; margin-bottom: 10px;}
+.card__descriptionIcon {
+    font-size: 32px; 
+    margin-bottom: 10px;
+}
 
 .card__descriptionText {
     color: #57727C;
@@ -40,16 +47,17 @@ html {
 }
 
 .cardGroup {
-    /* display */
-  
+    display: flex;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
   }
   
     .cardGroup__card {
-      /* flex-grow, flex-shrink, flex-basis */
-  
+      display: flex;
+      flex-grow: 1 1 1;
+      flex-shrink: 1;
+      flex-basis: 100%;  
       border: none;
       border-radius: 0;
     }
@@ -59,5 +67,7 @@ html {
     }
   
     .cardGroup__cardDescription {
-      /* flex-grow, flex-shrink, flex-basis */
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 100%
     }
