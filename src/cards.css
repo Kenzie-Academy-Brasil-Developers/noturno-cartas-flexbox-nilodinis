@@ -51,23 +51,32 @@ html {
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
+    justify-content: center;
+    max-width: 710px;
   }
+
+@media screen and (max-width: 720px) {
+  .cardGroup {
+     max-width: 320px;
+    flex-direction: column;
+  }
+}
   
-    .cardGroup__card {
-      display: flex;
-      flex-grow: 1 1 1;
-      flex-shrink: 1;
-      flex-basis: 100%;  
-      border: none;
-      border-radius: 0;
-    }
+.cardGroup__card {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;  
+  border: none;
+  border-radius: 0;
+ }
   
-    .cardGroup__card {
+.cardGroup__card {
       border-left: 1px solid #D7DBDD;
     }
   
-    .cardGroup__cardDescription {
-      flex-grow: 1;
-      flex-shrink: 1;
-      flex-basis: 100%
-    }
+.cardGroup__cardDescription {
+  flex-grow: 1;
+  flex-shrink: 1;
+   flex-basis: 100%
+}
